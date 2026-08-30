@@ -1,0 +1,48 @@
+# Dependencies and build output
+node_modules/
+.expo/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+!.env.demo.example
+deploy/.env
+deploy/secrets/*
+!deploy/secrets/README.md
+!deploy/secrets/.gitignore
+!deploy/secrets/.gitkeep
+
+# VPS pilot backups and restored data stay outside version control
+deploy/backups/
+deploy/restores/
+deploy/private/
+
+# Private pilot material is never part of the portfolio repository
+private/
+pilot-data/
+docs/private/
+*.pilot.csv
+*.pilot.geojson
+
+# Local databases and generated map packs
+.local/
+*.db
+*.sqlite
+*.sqlite3
+*.mbtiles
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+.idea/
+*.swp

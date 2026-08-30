@@ -1,0 +1,278 @@
+[
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/01",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            -0.00275
+          ],
+          [
+            0.00155,
+            -0.00275
+          ]
+        ]
+      ]
+    },
+    "name": "Pasaje Aurora Cero",
+    "serviceSide": "LEFT",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/02",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            -0.00225
+          ],
+          [
+            0.00155,
+            -0.00225
+          ]
+        ]
+      ]
+    },
+    "name": "Calle Bruma Digital",
+    "serviceSide": "RIGHT",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/03",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            -0.00175
+          ],
+          [
+            0.00155,
+            -0.00175
+          ]
+        ]
+      ]
+    },
+    "name": "Sendero Cobalto Norte",
+    "serviceSide": "BOTH",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/04",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            -0.00125
+          ],
+          [
+            0.00155,
+            -0.00125
+          ]
+        ]
+      ]
+    },
+    "name": "Avenida Horizonte Beta",
+    "serviceSide": "LEFT",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/05",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            -0.00075
+          ],
+          [
+            0.00155,
+            -0.00075
+          ]
+        ]
+      ]
+    },
+    "name": "Pasaje Lumen Sur",
+    "serviceSide": "RIGHT",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/06",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            -0.00025
+          ],
+          [
+            0.00155,
+            -0.00025
+          ]
+        ]
+      ]
+    },
+    "name": "Calle Nébula Clara",
+    "serviceSide": "BOTH",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/07",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            0.00025
+          ],
+          [
+            0.00155,
+            0.00025
+          ]
+        ]
+      ]
+    },
+    "name": "Sendero Prisma Uno",
+    "serviceSide": "LEFT",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/08",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            0.00075
+          ],
+          [
+            0.00155,
+            0.00075
+          ]
+        ]
+      ]
+    },
+    "name": "Avenida Quimera Este",
+    "serviceSide": "RIGHT",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/09",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            0.00125
+          ],
+          [
+            0.00155,
+            0.00125
+          ]
+        ]
+      ]
+    },
+    "name": "Pasaje Solaris Dos",
+    "serviceSide": "BOTH",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/10",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            0.00175
+          ],
+          [
+            0.00155,
+            0.00175
+          ]
+        ]
+      ]
+    },
+    "name": "Calle Vértice Azul",
+    "serviceSide": "LEFT",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/11",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            0.00225
+          ],
+          [
+            0.00155,
+            0.00225
+          ]
+        ]
+      ]
+    },
+    "name": "Sendero Zafiro Cero",
+    "serviceSide": "RIGHT",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  },
+  {
+    "attribution": "Datos sintéticos de demostración; no representan ubicaciones reales.",
+    "externalId": "synthetic/segment/12",
+    "geometry": {
+      "type": "MultiLineString",
+      "coordinates": [
+        [
+          [
+            -0.00155,
+            0.00275
+          ],
+          [
+            0.00155,
+            0.00275
+          ]
+        ]
+      ]
+    },
+    "name": "Avenida Órbita Demo",
+    "serviceSide": "BOTH",
+    "source": "GEOJSON",
+    "sourceVersion": "synthetic-v1"
+  }
+]

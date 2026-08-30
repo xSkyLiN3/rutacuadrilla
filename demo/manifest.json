@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "ruta-demo-sintetica-v1",
+  "name": "Ruta Demo Horizonte",
+  "sectorName": "Distrito Demo Cero",
+  "description": "Dataset determinístico completamente ficticio; no representa calles, predios, viviendas ni personas reales.",
+  "synthetic": true,
+  "seed": "rutacuadrilla-public-synthetic-v1",
+  "origin": [
+    0,
+    0
+  ],
+  "coordinateReferenceSystem": "WGS84",
+  "counts": {
+    "points": 72,
+    "segments": 12,
+    "parcels": 72,
+    "dwellings": 72
+  },
+  "files": {
+    "area": "demo/area.geojson",
+    "dwellings": "apps/field/public/demo-dwellings.geojson",
+    "parcels": "apps/field/public/demo-parcels.geojson",
+    "route": "demo/route.csv",
+    "segments": "demo/segments.json"
+  },
+  "sha256": {
+    "demo/area.geojson": "d55ca86d83156f4f8651ad69e7f384e9595524df0720bb85dede5051ce986e0b",
+    "apps/field/public/demo-dwellings.geojson": "5cb97d6c5e748786f0e632f545f68382975bf5ed220d109aef4c0758ca21be2b",
+    "apps/field/public/demo-parcels.geojson": "2d95f954d8eefd1c049a8a8408eabb1d76a09317638d0ec77331c482709d6695",
+    "demo/route.csv": "f9eca8167da8aa6a7894ef65ec2c577c238868a71eb077ef84af480858166945",
+    "demo/segments.json": "01f06cbfde695cbdeae6a4deb2f0980f6a43ada8b38e1fd6ac1bb74ffd9424fc"
+  }
+}

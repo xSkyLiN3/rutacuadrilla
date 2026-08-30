@@ -1,0 +1,2458 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "synthetic": true,
+    "seed": "rutacuadrilla-public-synthetic-v1",
+    "description": "Huellas ficticias generadas para la demostración pública de RutaCuadrilla."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/001",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              -0.00266
+            ],
+            [
+              -0.001175,
+              -0.00266
+            ],
+            [
+              -0.001175,
+              -0.00258
+            ],
+            [
+              -0.001325,
+              -0.00258
+            ],
+            [
+              -0.001325,
+              -0.00266
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/002",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              -0.00266
+            ],
+            [
+              -0.000675,
+              -0.00266
+            ],
+            [
+              -0.000675,
+              -0.00258
+            ],
+            [
+              -0.000825,
+              -0.00258
+            ],
+            [
+              -0.000825,
+              -0.00266
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/003",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              -0.00266
+            ],
+            [
+              -0.000175,
+              -0.00266
+            ],
+            [
+              -0.000175,
+              -0.00258
+            ],
+            [
+              -0.000325,
+              -0.00258
+            ],
+            [
+              -0.000325,
+              -0.00266
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/004",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              -0.00266
+            ],
+            [
+              0.000325,
+              -0.00266
+            ],
+            [
+              0.000325,
+              -0.00258
+            ],
+            [
+              0.000175,
+              -0.00258
+            ],
+            [
+              0.000175,
+              -0.00266
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/005",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              -0.00266
+            ],
+            [
+              0.000825,
+              -0.00266
+            ],
+            [
+              0.000825,
+              -0.00258
+            ],
+            [
+              0.000675,
+              -0.00258
+            ],
+            [
+              0.000675,
+              -0.00266
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/006",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              -0.00266
+            ],
+            [
+              0.001325,
+              -0.00266
+            ],
+            [
+              0.001325,
+              -0.00258
+            ],
+            [
+              0.001175,
+              -0.00258
+            ],
+            [
+              0.001175,
+              -0.00266
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/007",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              -0.00242
+            ],
+            [
+              -0.001175,
+              -0.00242
+            ],
+            [
+              -0.001175,
+              -0.00234
+            ],
+            [
+              -0.001325,
+              -0.00234
+            ],
+            [
+              -0.001325,
+              -0.00242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/008",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              -0.00242
+            ],
+            [
+              -0.000675,
+              -0.00242
+            ],
+            [
+              -0.000675,
+              -0.00234
+            ],
+            [
+              -0.000825,
+              -0.00234
+            ],
+            [
+              -0.000825,
+              -0.00242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/009",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              -0.00242
+            ],
+            [
+              -0.000175,
+              -0.00242
+            ],
+            [
+              -0.000175,
+              -0.00234
+            ],
+            [
+              -0.000325,
+              -0.00234
+            ],
+            [
+              -0.000325,
+              -0.00242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/010",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              -0.00242
+            ],
+            [
+              0.000325,
+              -0.00242
+            ],
+            [
+              0.000325,
+              -0.00234
+            ],
+            [
+              0.000175,
+              -0.00234
+            ],
+            [
+              0.000175,
+              -0.00242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/011",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              -0.00242
+            ],
+            [
+              0.000825,
+              -0.00242
+            ],
+            [
+              0.000825,
+              -0.00234
+            ],
+            [
+              0.000675,
+              -0.00234
+            ],
+            [
+              0.000675,
+              -0.00242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/012",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              -0.00242
+            ],
+            [
+              0.001325,
+              -0.00242
+            ],
+            [
+              0.001325,
+              -0.00234
+            ],
+            [
+              0.001175,
+              -0.00234
+            ],
+            [
+              0.001175,
+              -0.00242
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/013",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              -0.00166
+            ],
+            [
+              -0.001175,
+              -0.00166
+            ],
+            [
+              -0.001175,
+              -0.00158
+            ],
+            [
+              -0.001325,
+              -0.00158
+            ],
+            [
+              -0.001325,
+              -0.00166
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/014",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              -0.00192
+            ],
+            [
+              -0.000675,
+              -0.00192
+            ],
+            [
+              -0.000675,
+              -0.00184
+            ],
+            [
+              -0.000825,
+              -0.00184
+            ],
+            [
+              -0.000825,
+              -0.00192
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/015",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              -0.00166
+            ],
+            [
+              -0.000175,
+              -0.00166
+            ],
+            [
+              -0.000175,
+              -0.00158
+            ],
+            [
+              -0.000325,
+              -0.00158
+            ],
+            [
+              -0.000325,
+              -0.00166
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/016",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              -0.00192
+            ],
+            [
+              0.000325,
+              -0.00192
+            ],
+            [
+              0.000325,
+              -0.00184
+            ],
+            [
+              0.000175,
+              -0.00184
+            ],
+            [
+              0.000175,
+              -0.00192
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/017",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              -0.00166
+            ],
+            [
+              0.000825,
+              -0.00166
+            ],
+            [
+              0.000825,
+              -0.00158
+            ],
+            [
+              0.000675,
+              -0.00158
+            ],
+            [
+              0.000675,
+              -0.00166
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/018",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              -0.00192
+            ],
+            [
+              0.001325,
+              -0.00192
+            ],
+            [
+              0.001325,
+              -0.00184
+            ],
+            [
+              0.001175,
+              -0.00184
+            ],
+            [
+              0.001175,
+              -0.00192
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/019",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              -0.00116
+            ],
+            [
+              -0.001175,
+              -0.00116
+            ],
+            [
+              -0.001175,
+              -0.00108
+            ],
+            [
+              -0.001325,
+              -0.00108
+            ],
+            [
+              -0.001325,
+              -0.00116
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/020",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              -0.00116
+            ],
+            [
+              -0.000675,
+              -0.00116
+            ],
+            [
+              -0.000675,
+              -0.00108
+            ],
+            [
+              -0.000825,
+              -0.00108
+            ],
+            [
+              -0.000825,
+              -0.00116
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/021",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              -0.00116
+            ],
+            [
+              -0.000175,
+              -0.00116
+            ],
+            [
+              -0.000175,
+              -0.00108
+            ],
+            [
+              -0.000325,
+              -0.00108
+            ],
+            [
+              -0.000325,
+              -0.00116
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/022",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              -0.00116
+            ],
+            [
+              0.000325,
+              -0.00116
+            ],
+            [
+              0.000325,
+              -0.00108
+            ],
+            [
+              0.000175,
+              -0.00108
+            ],
+            [
+              0.000175,
+              -0.00116
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/023",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              -0.00116
+            ],
+            [
+              0.000825,
+              -0.00116
+            ],
+            [
+              0.000825,
+              -0.00108
+            ],
+            [
+              0.000675,
+              -0.00108
+            ],
+            [
+              0.000675,
+              -0.00116
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/024",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              -0.00116
+            ],
+            [
+              0.001325,
+              -0.00116
+            ],
+            [
+              0.001325,
+              -0.00108
+            ],
+            [
+              0.001175,
+              -0.00108
+            ],
+            [
+              0.001175,
+              -0.00116
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/025",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              -0.00092
+            ],
+            [
+              -0.001175,
+              -0.00092
+            ],
+            [
+              -0.001175,
+              -0.00084
+            ],
+            [
+              -0.001325,
+              -0.00084
+            ],
+            [
+              -0.001325,
+              -0.00092
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/026",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              -0.00092
+            ],
+            [
+              -0.000675,
+              -0.00092
+            ],
+            [
+              -0.000675,
+              -0.00084
+            ],
+            [
+              -0.000825,
+              -0.00084
+            ],
+            [
+              -0.000825,
+              -0.00092
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/027",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              -0.00092
+            ],
+            [
+              -0.000175,
+              -0.00092
+            ],
+            [
+              -0.000175,
+              -0.00084
+            ],
+            [
+              -0.000325,
+              -0.00084
+            ],
+            [
+              -0.000325,
+              -0.00092
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/028",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              -0.00092
+            ],
+            [
+              0.000325,
+              -0.00092
+            ],
+            [
+              0.000325,
+              -0.00084
+            ],
+            [
+              0.000175,
+              -0.00084
+            ],
+            [
+              0.000175,
+              -0.00092
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/029",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              -0.00092
+            ],
+            [
+              0.000825,
+              -0.00092
+            ],
+            [
+              0.000825,
+              -0.00084
+            ],
+            [
+              0.000675,
+              -0.00084
+            ],
+            [
+              0.000675,
+              -0.00092
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/030",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              -0.00092
+            ],
+            [
+              0.001325,
+              -0.00092
+            ],
+            [
+              0.001325,
+              -0.00084
+            ],
+            [
+              0.001175,
+              -0.00084
+            ],
+            [
+              0.001175,
+              -0.00092
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/031",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              -0.00016
+            ],
+            [
+              -0.001175,
+              -0.00016
+            ],
+            [
+              -0.001175,
+              -0.00008
+            ],
+            [
+              -0.001325,
+              -0.00008
+            ],
+            [
+              -0.001325,
+              -0.00016
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/032",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              -0.00042
+            ],
+            [
+              -0.000675,
+              -0.00042
+            ],
+            [
+              -0.000675,
+              -0.00034
+            ],
+            [
+              -0.000825,
+              -0.00034
+            ],
+            [
+              -0.000825,
+              -0.00042
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/033",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              -0.00016
+            ],
+            [
+              -0.000175,
+              -0.00016
+            ],
+            [
+              -0.000175,
+              -0.00008
+            ],
+            [
+              -0.000325,
+              -0.00008
+            ],
+            [
+              -0.000325,
+              -0.00016
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/034",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              -0.00042
+            ],
+            [
+              0.000325,
+              -0.00042
+            ],
+            [
+              0.000325,
+              -0.00034
+            ],
+            [
+              0.000175,
+              -0.00034
+            ],
+            [
+              0.000175,
+              -0.00042
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/035",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              -0.00016
+            ],
+            [
+              0.000825,
+              -0.00016
+            ],
+            [
+              0.000825,
+              -0.00008
+            ],
+            [
+              0.000675,
+              -0.00008
+            ],
+            [
+              0.000675,
+              -0.00016
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/036",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              -0.00042
+            ],
+            [
+              0.001325,
+              -0.00042
+            ],
+            [
+              0.001325,
+              -0.00034
+            ],
+            [
+              0.001175,
+              -0.00034
+            ],
+            [
+              0.001175,
+              -0.00042
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/037",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              0.00034
+            ],
+            [
+              -0.001175,
+              0.00034
+            ],
+            [
+              -0.001175,
+              0.00042
+            ],
+            [
+              -0.001325,
+              0.00042
+            ],
+            [
+              -0.001325,
+              0.00034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/038",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              0.00034
+            ],
+            [
+              -0.000675,
+              0.00034
+            ],
+            [
+              -0.000675,
+              0.00042
+            ],
+            [
+              -0.000825,
+              0.00042
+            ],
+            [
+              -0.000825,
+              0.00034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/039",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              0.00034
+            ],
+            [
+              -0.000175,
+              0.00034
+            ],
+            [
+              -0.000175,
+              0.00042
+            ],
+            [
+              -0.000325,
+              0.00042
+            ],
+            [
+              -0.000325,
+              0.00034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/040",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              0.00034
+            ],
+            [
+              0.000325,
+              0.00034
+            ],
+            [
+              0.000325,
+              0.00042
+            ],
+            [
+              0.000175,
+              0.00042
+            ],
+            [
+              0.000175,
+              0.00034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/041",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              0.00034
+            ],
+            [
+              0.000825,
+              0.00034
+            ],
+            [
+              0.000825,
+              0.00042
+            ],
+            [
+              0.000675,
+              0.00042
+            ],
+            [
+              0.000675,
+              0.00034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/042",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              0.00034
+            ],
+            [
+              0.001325,
+              0.00034
+            ],
+            [
+              0.001325,
+              0.00042
+            ],
+            [
+              0.001175,
+              0.00042
+            ],
+            [
+              0.001175,
+              0.00034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/043",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              0.00058
+            ],
+            [
+              -0.001175,
+              0.00058
+            ],
+            [
+              -0.001175,
+              0.00066
+            ],
+            [
+              -0.001325,
+              0.00066
+            ],
+            [
+              -0.001325,
+              0.00058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/044",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              0.00058
+            ],
+            [
+              -0.000675,
+              0.00058
+            ],
+            [
+              -0.000675,
+              0.00066
+            ],
+            [
+              -0.000825,
+              0.00066
+            ],
+            [
+              -0.000825,
+              0.00058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/045",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              0.00058
+            ],
+            [
+              -0.000175,
+              0.00058
+            ],
+            [
+              -0.000175,
+              0.00066
+            ],
+            [
+              -0.000325,
+              0.00066
+            ],
+            [
+              -0.000325,
+              0.00058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/046",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              0.00058
+            ],
+            [
+              0.000325,
+              0.00058
+            ],
+            [
+              0.000325,
+              0.00066
+            ],
+            [
+              0.000175,
+              0.00066
+            ],
+            [
+              0.000175,
+              0.00058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/047",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              0.00058
+            ],
+            [
+              0.000825,
+              0.00058
+            ],
+            [
+              0.000825,
+              0.00066
+            ],
+            [
+              0.000675,
+              0.00066
+            ],
+            [
+              0.000675,
+              0.00058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/048",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              0.00058
+            ],
+            [
+              0.001325,
+              0.00058
+            ],
+            [
+              0.001325,
+              0.00066
+            ],
+            [
+              0.001175,
+              0.00066
+            ],
+            [
+              0.001175,
+              0.00058
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/049",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              0.00134
+            ],
+            [
+              -0.001175,
+              0.00134
+            ],
+            [
+              -0.001175,
+              0.00142
+            ],
+            [
+              -0.001325,
+              0.00142
+            ],
+            [
+              -0.001325,
+              0.00134
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/050",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              0.00108
+            ],
+            [
+              -0.000675,
+              0.00108
+            ],
+            [
+              -0.000675,
+              0.00116
+            ],
+            [
+              -0.000825,
+              0.00116
+            ],
+            [
+              -0.000825,
+              0.00108
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/051",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              0.00134
+            ],
+            [
+              -0.000175,
+              0.00134
+            ],
+            [
+              -0.000175,
+              0.00142
+            ],
+            [
+              -0.000325,
+              0.00142
+            ],
+            [
+              -0.000325,
+              0.00134
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/052",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              0.00108
+            ],
+            [
+              0.000325,
+              0.00108
+            ],
+            [
+              0.000325,
+              0.00116
+            ],
+            [
+              0.000175,
+              0.00116
+            ],
+            [
+              0.000175,
+              0.00108
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/053",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              0.00134
+            ],
+            [
+              0.000825,
+              0.00134
+            ],
+            [
+              0.000825,
+              0.00142
+            ],
+            [
+              0.000675,
+              0.00142
+            ],
+            [
+              0.000675,
+              0.00134
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/054",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              0.00108
+            ],
+            [
+              0.001325,
+              0.00108
+            ],
+            [
+              0.001325,
+              0.00116
+            ],
+            [
+              0.001175,
+              0.00116
+            ],
+            [
+              0.001175,
+              0.00108
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/055",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              0.00184
+            ],
+            [
+              -0.001175,
+              0.00184
+            ],
+            [
+              -0.001175,
+              0.00192
+            ],
+            [
+              -0.001325,
+              0.00192
+            ],
+            [
+              -0.001325,
+              0.00184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/056",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              0.00184
+            ],
+            [
+              -0.000675,
+              0.00184
+            ],
+            [
+              -0.000675,
+              0.00192
+            ],
+            [
+              -0.000825,
+              0.00192
+            ],
+            [
+              -0.000825,
+              0.00184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/057",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              0.00184
+            ],
+            [
+              -0.000175,
+              0.00184
+            ],
+            [
+              -0.000175,
+              0.00192
+            ],
+            [
+              -0.000325,
+              0.00192
+            ],
+            [
+              -0.000325,
+              0.00184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/058",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              0.00184
+            ],
+            [
+              0.000325,
+              0.00184
+            ],
+            [
+              0.000325,
+              0.00192
+            ],
+            [
+              0.000175,
+              0.00192
+            ],
+            [
+              0.000175,
+              0.00184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/059",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              0.00184
+            ],
+            [
+              0.000825,
+              0.00184
+            ],
+            [
+              0.000825,
+              0.00192
+            ],
+            [
+              0.000675,
+              0.00192
+            ],
+            [
+              0.000675,
+              0.00184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/060",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              0.00184
+            ],
+            [
+              0.001325,
+              0.00184
+            ],
+            [
+              0.001325,
+              0.00192
+            ],
+            [
+              0.001175,
+              0.00192
+            ],
+            [
+              0.001175,
+              0.00184
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/061",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              0.00208
+            ],
+            [
+              -0.001175,
+              0.00208
+            ],
+            [
+              -0.001175,
+              0.00216
+            ],
+            [
+              -0.001325,
+              0.00216
+            ],
+            [
+              -0.001325,
+              0.00208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/062",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              0.00208
+            ],
+            [
+              -0.000675,
+              0.00208
+            ],
+            [
+              -0.000675,
+              0.00216
+            ],
+            [
+              -0.000825,
+              0.00216
+            ],
+            [
+              -0.000825,
+              0.00208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/063",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              0.00208
+            ],
+            [
+              -0.000175,
+              0.00208
+            ],
+            [
+              -0.000175,
+              0.00216
+            ],
+            [
+              -0.000325,
+              0.00216
+            ],
+            [
+              -0.000325,
+              0.00208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/064",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              0.00208
+            ],
+            [
+              0.000325,
+              0.00208
+            ],
+            [
+              0.000325,
+              0.00216
+            ],
+            [
+              0.000175,
+              0.00216
+            ],
+            [
+              0.000175,
+              0.00208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/065",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              0.00208
+            ],
+            [
+              0.000825,
+              0.00208
+            ],
+            [
+              0.000825,
+              0.00216
+            ],
+            [
+              0.000675,
+              0.00216
+            ],
+            [
+              0.000675,
+              0.00208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/066",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              0.00208
+            ],
+            [
+              0.001325,
+              0.00208
+            ],
+            [
+              0.001325,
+              0.00216
+            ],
+            [
+              0.001175,
+              0.00216
+            ],
+            [
+              0.001175,
+              0.00208
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/067",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.001325,
+              0.00284
+            ],
+            [
+              -0.001175,
+              0.00284
+            ],
+            [
+              -0.001175,
+              0.00292
+            ],
+            [
+              -0.001325,
+              0.00292
+            ],
+            [
+              -0.001325,
+              0.00284
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/068",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000825,
+              0.00258
+            ],
+            [
+              -0.000675,
+              0.00258
+            ],
+            [
+              -0.000675,
+              0.00266
+            ],
+            [
+              -0.000825,
+              0.00266
+            ],
+            [
+              -0.000825,
+              0.00258
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/069",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -0.000325,
+              0.00284
+            ],
+            [
+              -0.000175,
+              0.00284
+            ],
+            [
+              -0.000175,
+              0.00292
+            ],
+            [
+              -0.000325,
+              0.00292
+            ],
+            [
+              -0.000325,
+              0.00284
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/070",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000175,
+              0.00258
+            ],
+            [
+              0.000325,
+              0.00258
+            ],
+            [
+              0.000325,
+              0.00266
+            ],
+            [
+              0.000175,
+              0.00266
+            ],
+            [
+              0.000175,
+              0.00258
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/071",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.000675,
+              0.00284
+            ],
+            [
+              0.000825,
+              0.00284
+            ],
+            [
+              0.000825,
+              0.00292
+            ],
+            [
+              0.000675,
+              0.00292
+            ],
+            [
+              0.000675,
+              0.00284
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "externalId": "synthetic/dwelling/072",
+        "synthetic": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              0.001175,
+              0.00258
+            ],
+            [
+              0.001325,
+              0.00258
+            ],
+            [
+              0.001325,
+              0.00266
+            ],
+            [
+              0.001175,
+              0.00266
+            ],
+            [
+              0.001175,
+              0.00258
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

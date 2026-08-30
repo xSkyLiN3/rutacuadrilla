@@ -1,0 +1,24 @@
+* text=auto
+
+*.css text eol=lf
+*.conf text eol=lf
+*.csv text eol=lf
+*.example text eol=lf
+*.geojson text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.mjs text eol=lf
+*.sh text eol=lf
+*.sql text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+Caddyfile text eol=lf
+
+*.ico binary
+*.jpg binary
+*.png binary
+*.webp binary

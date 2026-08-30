@@ -1,0 +1,108 @@
+name: Quality
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - "codex/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: Verify (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Node 24
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install from lockfile
+        run: npm ci
+
+      - name: Static checks
+        run: npm run check
+
+      - name: Tests
+        run: npm test
+
+      - name: Production builds
+        run: npm run build
+
+      - name: Production dependency audit
+        if: runner.os == 'Linux'
+        run: npm audit --omit=dev --audit-level=high
+
+  postgres-smoke:
+    name: PostgreSQL 18 provisioning smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    services:
+      postgres:
+        image: postgres:18.6-bookworm
+        env:
+          POSTGRES_DB: rutacuadrilla_test
+          POSTGRES_USER: rutacuadrilla
+          POSTGRES_PASSWORD: ci-only-postgres-password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U rutacuadrilla -d rutacuadrilla_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Node 24
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install from lockfile
+        run: npm ci
+
+      - name: Validate production Compose merge
+        run: |
+          install -m 0600 /dev/null deploy/secrets/session_secret
+          install -m 0600 /dev/null deploy/secrets/postgres_password
+          install -m 0600 /dev/null deploy/secrets/database_url
+          install -m 0600 /dev/null deploy/secrets/initial_admin_password
+          docker compose --env-file deploy/.env.example \
+            -f deploy/compose.vps.yml -f deploy/compose.provision.yml \
+            config -q
+          sudo chown root:1000 deploy/secrets/database_url \
+            deploy/secrets/initial_admin_password
+          sudo chmod 0440 deploy/secrets/database_url \
+            deploy/secrets/initial_admin_password
+          docker compose --env-file deploy/.env.example \
+            -f deploy/compose.vps.yml build api
+          docker compose --env-file deploy/.env.example \
+            -f deploy/compose.vps.yml -f deploy/compose.provision.yml \
+            run --rm --no-deps --entrypoint sh provision -eu -c \
+            'test "$(id -u)" = 1000; test "$(id -g)" = 1000; test -r /run/secrets/database_url; test -r /run/secrets/initial_admin_password; test -f /workspace/tools/provision-initial-admin.mjs'
+
+      - name: PostgreSQL provision smoke
+        env:
+          RUTACUADRILLA_TEST_POSTGRES_URL: postgresql://rutacuadrilla:ci-only-postgres-password@127.0.0.1:5432/rutacuadrilla_test
+        run: npm run test:postgres:provision

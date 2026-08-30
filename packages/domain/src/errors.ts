@@ -1,0 +1,79 @@
+export type DomainErrorCode =
+  | "CAPABILITY_REQUIRED"
+  | "CAMPAIGN_EMPTY"
+  | "CAMPAIGN_INVALID_INPUT"
+  | "CAMPAIGN_INVALID_STATE"
+  | "CAMPAIGN_NOT_ACTIVE"
+  | "CAMPAIGN_NOT_FOUND"
+  | "CAMPAIGN_POINT_NOT_FOUND"
+  | "CAMPAIGN_POINT_DUPLICATE"
+  | "CAMPAIGN_ROUTE_DUPLICATE"
+  | "CAMPAIGN_ROUTE_HAS_ACTIVITY"
+  | "CAMPAIGN_ROUTE_NOT_FOUND"
+  | "CAMPAIGN_ROUTE_NOT_ACTIVE"
+  | "CAMPAIGN_ROUTE_REVISION_INVALID"
+  | "CAMPAIGN_SEGMENT_SIDE_DUPLICATE"
+  | "CAMPAIGN_SEGMENT_VERSION_AMBIGUOUS"
+  | "CAMPAIGN_VEHICLE_DUPLICATE"
+  | "CAMPAIGN_VEHICLE_REQUIRED"
+  | "CONTEXT_NOT_FOUND"
+  | "CSV_EMPTY"
+  | "CSV_INVALID"
+  | "CURSOR_INVALID"
+  | "CURSOR_SCOPE_MISMATCH"
+  | "DATABASE_NOT_READY"
+  | "DRAFT_ALREADY_EXISTS"
+  | "DRAFT_VERSION_CONFLICT"
+  | "INVALID_GEOMETRY"
+  | "IDEMPOTENCY_KEY_REUSE"
+  | "INVALID_CREDENTIALS"
+  | "INVALID_REVISION_STATE"
+  | "MEMBERSHIP_NOT_FOUND"
+  | "MIGRATION_CHECKSUM_MISMATCH"
+  | "OSM_EXPORT_INVALID"
+  | "POINT_ALREADY_INCLUDED"
+  | "POINT_NOT_IN_REVISION"
+  | "POINT_VERSION_CONFLICT"
+  | "ROUTE_NOT_FOUND"
+  | "ROUTE_PACKAGE_DRAFT"
+  | "ROUTE_REVISION_CHANGE_INVALID"
+  | "REVISION_EMPTY"
+  | "REVISION_NOT_FOUND"
+  | "SEGMENT_DUPLICATE"
+  | "SEGMENT_SIDE_ORIENTATION_INVALID"
+  | "SEED_PASSWORD_TOO_SHORT"
+  | "SYNC_DUPLICATE_OPERATION_ID"
+  | "SYNC_INVALID_COMMAND"
+  | "SYNC_INVALID_CONTEXT"
+  | "VEHICLE_DUPLICATE"
+  | "VEHICLE_NOT_FOUND"
+  | "WORK_SESSION_ALREADY_OPEN"
+  | "WORK_SESSION_DEVICE_CONFLICT"
+  | "WORK_SESSION_INVALID_INPUT"
+  | "WORK_SESSION_NOT_ACTIVE"
+  | "WORK_SESSION_NOT_FOUND"
+  | "WORK_SESSION_PARTICIPATION_REQUIRED"
+  | "WORK_SESSION_SCOPE_MISMATCH"
+  | "WORK_SESSION_VERSION_CONFLICT";
+
+export class DomainError<Details = unknown> extends Error {
+  readonly code: DomainErrorCode;
+  readonly details: Details | undefined;
+  readonly statusCode: number;
+
+  constructor(
+    code: DomainErrorCode,
+    options: {
+      cause?: unknown;
+      details?: Details;
+      message?: string;
+      statusCode?: number;
+    } = {},
+  ) {
+    super(options.message ?? code, { cause: options.cause });
+    this.name = "DomainError";
+    this.code = code;
+    this.details = options.details;
+    this.statusCode = options.statusCode ?? 400;
+  }
+}

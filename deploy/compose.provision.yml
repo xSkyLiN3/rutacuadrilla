@@ -1,0 +1,33 @@
+services:
+  provision:
+    image: rutacuadrilla-api:${APP_RELEASE:?Define APP_RELEASE in deploy/.env}
+    init: true
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL_FILE: /run/secrets/database_url
+      RUTACUADRILLA_INITIAL_ADMIN_DISPLAY_NAME: ${INITIAL_ADMIN_DISPLAY_NAME:?Define INITIAL_ADMIN_DISPLAY_NAME}
+      RUTACUADRILLA_INITIAL_ADMIN_EMAIL: ${INITIAL_ADMIN_EMAIL:?Define INITIAL_ADMIN_EMAIL}
+      RUTACUADRILLA_INITIAL_ADMIN_PASSWORD_FILE: /run/secrets/initial_admin_password
+      RUTACUADRILLA_INITIAL_CREW_NAME: ${INITIAL_CREW_NAME:?Define INITIAL_CREW_NAME}
+      RUTACUADRILLA_INITIAL_CREW_SLUG: ${INITIAL_CREW_SLUG:?Define INITIAL_CREW_SLUG}
+    entrypoint:
+      - node
+      - tools/provision-initial-admin.mjs
+    secrets:
+      - database_url
+      - initial_admin_password
+    networks:
+      - backend
+    read_only: true
+    tmpfs:
+      - /tmp:size=32m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+
+secrets:
+  initial_admin_password:
+    file: ./secrets/initial_admin_password

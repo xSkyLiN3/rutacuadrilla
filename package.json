@@ -1,0 +1,72 @@
+{
+  "name": "rutacuadrilla",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Sistema full-stack geoespacial para asignar recorridos y registrar trabajo de campo",
+  "license": "MIT",
+  "author": "Cristóbal Alexander Vergara Vergara",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xSkyLiN3/rutacuadrilla.git"
+  },
+  "homepage": "https://github.com/xSkyLiN3/rutacuadrilla#readme",
+  "bugs": {
+    "url": "https://github.com/xSkyLiN3/rutacuadrilla/issues"
+  },
+  "keywords": [
+    "field-operations",
+    "geospatial",
+    "maplibre",
+    "postgresql",
+    "react",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=11.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace=@rutacuadrilla/domain && npm run build --workspace=@rutacuadrilla/api && npm run build --workspace=@rutacuadrilla/admin && npm run build --workspace=@rutacuadrilla/field",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run secrets:check",
+    "dev": "npm run dev:api",
+    "dev:admin": "npm run dev --workspace=@rutacuadrilla/admin",
+    "dev:field": "npm run dev --workspace=@rutacuadrilla/field",
+    "dev:api": "npm run build --workspace=@rutacuadrilla/domain && npm run dev --workspace=@rutacuadrilla/api",
+    "db:snapshot": "node tools/database-snapshot.mjs create",
+    "db:restore": "node tools/database-snapshot.mjs restore",
+    "format": "biome format --write apps packages tools",
+    "format:check": "biome format apps packages tools",
+    "demo:check": "node tools/generate-demo-route.mjs --check",
+    "demo:generate": "node tools/generate-demo-route.mjs --write",
+    "demo:import": "node tools/import-demo-route.mjs --audit",
+    "demo:apply": "node tools/import-demo-route.mjs --apply",
+    "demo:start": "node tools/start-demo.mjs",
+    "experiment:h40:proxy": "node tools/h40-sync-delay-proxy.mjs",
+    "experiment:h40:serve": "node tools/serve-h40-field-artifact.mjs",
+    "experiment:h40:verify": "node tools/verify-h40-evidence.mjs",
+    "lint": "biome lint apps packages tools",
+    "local:postgres:setup": "node tools/setup-local-postgres.mjs",
+    "local:postgres:start": "node tools/setup-local-postgres.mjs",
+    "provision:initial-admin": "npm run build --workspace=@rutacuadrilla/domain && node tools/provision-initial-admin.mjs",
+    "secrets:check": "node tools/check-secrets.mjs",
+    "test": "npm run test --workspace=@rutacuadrilla/domain && npm run test --workspace=@rutacuadrilla/api && npm run test --workspace=@rutacuadrilla/admin && npm run test --workspace=@rutacuadrilla/field && npm test --prefix spikes && npm run test:tools",
+    "test:tools": "npm run build --workspace=@rutacuadrilla/domain && node --test tools/database-snapshot.test.mjs tools/h40-sync-delay-proxy.test.mjs tools/demo-route-data.test.mjs tools/serve-h40-field-artifact.test.mjs tools/start-demo.test.mjs tools/verify-h40-evidence.test.mjs tools/provision-initial-admin.test.mjs tools/provision-initial-admin.postgres.test.mjs tools/verify-vps-pilot.test.mjs",
+    "test:postgres:provision": "npm run build --workspace=@rutacuadrilla/domain && node --test tools/provision-initial-admin.postgres.test.mjs",
+    "typecheck": "npm run typecheck --workspace=@rutacuadrilla/domain && npm run typecheck --workspace=@rutacuadrilla/api && npm run typecheck --workspace=@rutacuadrilla/admin && npm run typecheck --workspace=@rutacuadrilla/field",
+    "verify": "npm run check && npm run test && npm run build",
+    "verify:snapshot-campaign": "npm run build --workspace=@rutacuadrilla/domain && node tools/verify-campaign-snapshot.mjs",
+    "vps:provision": "npm run provision:initial-admin",
+    "vps:validate": "node tools/verify-vps-pilot.mjs"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.7",
+    "@types/node": "24.13.3",
+    "tsx": "4.23.12",
+    "typescript": "7.0.2",
+    "vitest": "4.1.10"
+  }
+}

@@ -1,0 +1,104 @@
+{
+	# TLS termina en el Nginx existente de la VPS. Caddy solo escucha dentro
+	# del host en 127.0.0.1:8432 mediante Docker Compose.
+	admin 127.0.0.1:2019
+	auto_https off
+}
+
+(api_proxy) {
+	reverse_proxy api:4310 {
+		# El listener de Caddy solo está publicado en loopback. Nginx reemplaza
+		# estas cabeceras con los datos reales antes de reenviar la solicitud.
+		header_up X-Forwarded-For {http.request.header.X-Real-IP}
+		header_up X-Forwarded-Host {http.request.header.X-Forwarded-Host}
+		header_up X-Forwarded-Proto {http.request.header.X-Forwarded-Proto}
+	}
+}
+
+(common_security) {
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		X-Permitted-Cross-Domain-Policies "none"
+		-Server
+	}
+}
+
+http://{$APP_HOST} {
+	import common_security
+	encode zstd gzip
+
+	@api path /api/* /health /ready
+	handle @api {
+		import api_proxy
+	}
+
+	@adminExact path /admin
+	redir @adminExact /admin/ 308
+
+	@admin path /admin/*
+	header @admin {
+		Content-Security-Policy "default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'"
+		Permissions-Policy "camera=(), geolocation=(), microphone=()"
+		Referrer-Policy "no-referrer"
+	}
+	# Los nombres de Vite incluyen hash de contenido: se pueden conservar un año.
+	# Este bloque debe preceder al fallback de /admin/ para que index.html siga
+	# revalidándose en cada acceso.
+	handle_path /admin/assets/* {
+		root * /srv/admin/assets
+		header Cache-Control "public, max-age=31536000, immutable"
+		file_server
+	}
+
+	handle_path /admin/* {
+		root * /srv/admin
+		try_files {path} /index.html
+		header Cache-Control "no-store, max-age=0"
+		file_server
+	}
+
+	@field {
+		not path /admin /admin/* /api/* /health /ready
+	}
+	header @field {
+		Content-Security-Policy "default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tile.openstreetmap.org; font-src 'self' data:; connect-src 'self' https://tile.openstreetmap.org"
+		Permissions-Policy "camera=(), geolocation=(self), microphone=()"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Cross-Origin-Embedder-Policy "require-corp"
+		Cross-Origin-Opener-Policy "same-origin"
+		Cross-Origin-Resource-Policy "same-origin"
+	}
+
+	handle /assets/* {
+		root * /srv/field
+		header Cache-Control "public, max-age=31536000, immutable"
+		file_server
+	}
+
+	# Worker transitorio: retira registros y cachés del shell offline histórico.
+	# Debe seguir disponible sin caché durante la migración de clientes antiguos.
+	handle /field-sw.js {
+		root * /srv/field
+		header Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+		file_server
+	}
+
+	# Los catálogos conservan su nombre entre despliegues. Forzamos revalidación
+	# inmediata para no mostrar fixtures antiguos, pero permitimos respuestas
+	# 304 cuando no cambiaron.
+	@routeCatalog path /demo-dwellings.geojson /demo-parcels.geojson
+	handle @routeCatalog {
+		root * /srv/field
+		header Cache-Control "public, max-age=0, must-revalidate"
+		file_server
+	}
+
+	handle {
+		root * /srv/field
+		try_files {path} /index.html
+		header Cache-Control "no-store, max-age=0"
+		file_server
+	}
+}

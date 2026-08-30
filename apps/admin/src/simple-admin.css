@@ -1,0 +1,383 @@
+.simple-admin-app {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 8% 0%,
+      color-mix(in srgb, var(--primary) 8%, transparent),
+      transparent 32rem
+    ),
+    var(--page);
+}
+
+.public-demo-banner {
+  margin: 0;
+  padding: 0.65rem clamp(1rem, 4vw, 2.5rem);
+  border-bottom: 1px solid #d6a72f;
+  background: #fff4cc;
+  color: #664500;
+  font-size: 0.9rem;
+  font-weight: 850;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.simple-admin-header {
+  position: sticky;
+  z-index: 40;
+  top: 0;
+  display: grid;
+  min-height: 72px;
+  grid-template-columns: minmax(190px, auto) 1fr minmax(220px, auto);
+  gap: 1rem;
+  align-items: center;
+  padding: 0.65rem clamp(1rem, 4vw, 2.5rem);
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 94%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+.simple-admin-header > div:first-child,
+.simple-account {
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.simple-admin-header > div:first-child > div,
+.simple-account > span {
+  display: grid;
+  line-height: 1.25;
+}
+
+.simple-admin-header nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.simple-admin-header nav button {
+  min-height: 44px;
+  padding: 0.5rem 0.8rem;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font-weight: 780;
+}
+
+.simple-admin-header nav button[aria-current="page"] {
+  border-bottom-color: var(--primary);
+  color: var(--text);
+}
+
+.simple-account {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.simple-admin-main {
+  width: min(100% - 2rem, 1180px);
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 3rem) 0 4rem;
+}
+
+.simple-page-heading {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+}
+
+.simple-page-heading p:last-child {
+  max-width: 68ch;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.simple-count {
+  flex: 0 0 auto;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.simple-alert {
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--danger);
+  border-radius: 0.55rem;
+  background: var(--danger-soft);
+  color: var(--danger);
+  font-weight: 720;
+}
+
+.simple-admin-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.75fr) minmax(0, 1.45fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.simple-card {
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  background: var(--surface);
+  box-shadow: 0 8px 22px color-mix(in srgb, var(--text) 7%, transparent);
+}
+
+.simple-form {
+  position: sticky;
+  top: 90px;
+  display: grid;
+  gap: 0.9rem;
+  padding: 1.15rem;
+}
+
+.simple-form h2 {
+  margin-bottom: 0;
+}
+
+.simple-form label,
+.simple-user-card label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 740;
+}
+
+.simple-form input,
+.simple-form textarea,
+.simple-user-card select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0.68rem 0.75rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 0.5rem;
+  background: var(--surface);
+}
+
+.simple-form textarea {
+  min-height: 210px;
+  resize: vertical;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.8rem;
+}
+
+.simple-user-list,
+.simple-route-list,
+.simple-progress-grid {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.simple-user-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(220px, 1fr) auto;
+  gap: 0.9rem;
+  align-items: end;
+  padding: 1rem;
+}
+
+.simple-user-card > div:first-child,
+.simple-route-card > div:first-child {
+  display: grid;
+  min-width: 0;
+}
+
+.simple-user-card span,
+.simple-user-card small,
+.simple-route-card span {
+  overflow: hidden;
+  color: var(--muted);
+  text-overflow: ellipsis;
+}
+
+.simple-user-card .button-row {
+  flex-wrap: nowrap;
+}
+
+.simple-route-card {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) minmax(250px, 1.2fr);
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+}
+
+.simple-route-card dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 0;
+}
+
+.simple-route-card dl > div {
+  padding: 0.55rem 0.65rem;
+  border-radius: 0.5rem;
+  background: var(--surface-soft);
+}
+
+.simple-route-card dt {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 780;
+  text-transform: uppercase;
+}
+
+.simple-route-card dd {
+  margin: 0;
+  font-weight: 820;
+}
+
+.simple-warning {
+  grid-column: 1 / -1;
+  color: var(--warning);
+  font-weight: 750;
+}
+
+.simple-empty {
+  display: grid;
+  min-height: 150px;
+  place-content: center;
+  gap: 0.3rem;
+  padding: 1.5rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.simple-progress-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+}
+
+.simple-progress-card {
+  padding: 1.1rem;
+}
+
+.simple-progress-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.simple-progress-title h2 {
+  margin-bottom: 0;
+}
+
+.simple-progress-title > strong {
+  color: var(--primary);
+  font-size: 1.75rem;
+}
+
+.simple-progress-track {
+  height: 0.65rem;
+  overflow: hidden;
+  margin: 1rem 0 0.5rem;
+  border-radius: 999px;
+  background: var(--surface-strong);
+}
+
+.simple-progress-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--primary);
+  transition: width 180ms ease;
+}
+
+.simple-progress-card > p {
+  color: var(--muted);
+}
+
+.simple-state-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+}
+
+.simple-state-grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.65rem;
+  border-left: 4px solid var(--border-strong);
+  border-radius: 0.4rem;
+  background: var(--surface-soft);
+}
+
+.simple-state-grid > div[data-state="SOBRE_ENTREGADO"] {
+  border-left-color: #166534;
+}
+.simple-state-grid > div[data-state="VOLVER"] {
+  border-left-color: #c2410c;
+}
+.simple-state-grid > div[data-state="SIN_RESPUESTA"] {
+  border-left-color: #7c3aed;
+}
+.simple-state-grid > div[data-state="APORTO"] {
+  border-left-color: #0f766e;
+}
+.simple-state-grid > div[data-state="NO_PARTICIPA"] {
+  border-left-color: #9f1239;
+}
+
+.simple-state-grid dt {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.simple-state-grid dd {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 850;
+}
+
+@media (max-width: 900px) {
+  .simple-admin-header {
+    grid-template-columns: 1fr auto;
+  }
+  .simple-admin-header nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    order: 3;
+  }
+  .simple-admin-grid {
+    grid-template-columns: 1fr;
+  }
+  .simple-form {
+    position: static;
+  }
+  .simple-user-card {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 560px) {
+  .simple-admin-header {
+    position: static;
+    grid-template-columns: 1fr;
+  }
+  .simple-account {
+    justify-content: space-between;
+    text-align: left;
+  }
+  .simple-admin-header nav {
+    grid-column: 1;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+  .simple-page-heading,
+  .simple-route-card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .simple-state-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,45 @@
+# syntax=docker/dockerfile:1.7
+
+FROM node:24.18.1-bookworm-slim AS build
+
+WORKDIR /workspace
+
+COPY package.json package-lock.json .npmrc ./
+COPY apps/api/package.json ./apps/api/package.json
+COPY apps/admin/package.json ./apps/admin/package.json
+COPY apps/field/package.json ./apps/field/package.json
+COPY packages/domain/package.json ./packages/domain/package.json
+
+RUN npm ci
+
+COPY tsconfig.base.json ./tsconfig.base.json
+COPY apps/api/tsconfig.json apps/api/tsconfig.build.json ./apps/api/
+COPY apps/api/src ./apps/api/src
+COPY packages/domain/tsconfig.json packages/domain/tsconfig.build.json ./packages/domain/
+COPY packages/domain/src ./packages/domain/src
+COPY database ./database
+COPY tools ./tools
+
+RUN npm run build --workspace=@rutacuadrilla/domain \
+    && npm run build --workspace=@rutacuadrilla/api \
+    && npm prune --omit=dev
+
+FROM node:24.18.1-bookworm-slim AS runtime
+
+ENV NODE_ENV=production
+WORKDIR /workspace
+
+COPY --from=build --chown=node:node /workspace/package.json /workspace/package-lock.json ./
+COPY --from=build --chown=node:node /workspace/node_modules ./node_modules
+COPY --from=build --chown=node:node /workspace/apps/api/package.json ./apps/api/package.json
+COPY --from=build --chown=node:node /workspace/apps/api/dist ./apps/api/dist
+COPY --from=build --chown=node:node /workspace/packages/domain/package.json ./packages/domain/package.json
+COPY --from=build --chown=node:node /workspace/packages/domain/dist ./packages/domain/dist
+COPY --from=build --chown=node:node /workspace/database ./database
+COPY --from=build --chown=node:node /workspace/tools ./tools
+
+USER node
+
+EXPOSE 4310
+
+CMD ["node", "apps/api/dist/start.js"]

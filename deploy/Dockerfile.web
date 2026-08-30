@@ -1,0 +1,26 @@
+# syntax=docker/dockerfile:1.7
+
+FROM node:24.18.1-bookworm-slim AS build
+
+WORKDIR /workspace
+
+COPY package.json package-lock.json .npmrc ./
+COPY apps/api/package.json ./apps/api/package.json
+COPY apps/admin/package.json ./apps/admin/package.json
+COPY apps/field/package.json ./apps/field/package.json
+COPY packages/domain/package.json ./packages/domain/package.json
+
+RUN npm ci
+
+COPY tsconfig.base.json ./tsconfig.base.json
+COPY apps/admin ./apps/admin
+COPY apps/field ./apps/field
+
+RUN VITE_API_URL="" npm run build --workspace=@rutacuadrilla/admin \
+    && VITE_API_URL="" npm run build --workspace=@rutacuadrilla/field
+
+FROM caddy:2.11.4-alpine AS runtime
+
+COPY deploy/Caddyfile /etc/caddy/Caddyfile
+COPY --from=build /workspace/apps/admin/dist /srv/admin
+COPY --from=build /workspace/apps/field/dist /srv/field

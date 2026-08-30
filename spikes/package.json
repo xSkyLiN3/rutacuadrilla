@@ -1,0 +1,12 @@
+{
+  "name": "rutacuadrilla-spikes",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "benchmark:map-data": "node benchmark-map-data.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

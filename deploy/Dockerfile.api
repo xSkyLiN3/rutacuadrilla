@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 
-FROM node:24.18.1-bookworm-slim AS build
+FROM node:26.8.1-bookworm-slim AS build
 
 WORKDIR /workspace
 
@@ -24,7 +24,7 @@ RUN npm run build --workspace=@rutacuadrilla/domain \
     && npm run build --workspace=@rutacuadrilla/api \
     && npm prune --omit=dev
 
-FROM node:24.18.1-bookworm-slim AS runtime
+FROM node:26.8.1-bookworm-slim AS runtime
 
 ENV NODE_ENV=production
 WORKDIR /workspace

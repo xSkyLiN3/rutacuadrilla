@@ -17,7 +17,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@electric-sql/pglite": "0.5.4",
+    "@electric-sql/pglite": "0.5.8",
     "csv-parse": "7.0.2",
     "pg": "8.23.0",
     "zod": "4.4.3"

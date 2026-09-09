@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@sqlite.org/sqlite-wasm": "3.53.0-build1",
-    "maplibre-gl": "6.3.0",
+    "maplibre-gl": "6.8.0",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },

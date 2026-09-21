@@ -63,10 +63,10 @@
     "vps:validate": "node tools/verify-vps-pilot.mjs"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.7",
-    "@types/node": "24.13.3",
-    "tsx": "4.23.12",
+    "@biomejs/biome": "2.5.14",
+    "@types/node": "26.6.1",
+    "tsx": "4.23.13",
     "typescript": "7.0.2",
-    "vitest": "4.1.10"
+    "vitest": "5.0.1"
   }
 }

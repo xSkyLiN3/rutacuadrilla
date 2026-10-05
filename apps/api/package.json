@@ -13,8 +13,8 @@
   "dependencies": {
     "@fastify/cors": "11.3.0",
     "@rutacuadrilla/domain": "*",
-    "fastify": "5.11.3",
-    "jose": "6.2.8",
-    "zod": "4.4.3"
+    "fastify": "5.12.5",
+    "jose": "6.2.12",
+    "zod": "4.6.5"
   }
 }

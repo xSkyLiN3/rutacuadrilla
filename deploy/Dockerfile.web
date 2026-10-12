@@ -19,7 +19,7 @@ COPY apps/field ./apps/field
 RUN VITE_API_URL="" npm run build --workspace=@rutacuadrilla/admin \
     && VITE_API_URL="" npm run build --workspace=@rutacuadrilla/field
 
-FROM caddy:2.11.4-alpine AS runtime
+FROM caddy:2.11.7-alpine AS runtime
 
 COPY deploy/Caddyfile /etc/caddy/Caddyfile
 COPY --from=build /workspace/apps/admin/dist /srv/admin

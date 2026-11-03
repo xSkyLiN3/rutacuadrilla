@@ -20,7 +20,7 @@
     "@electric-sql/pglite": "0.5.4",
     "csv-parse": "7.0.2",
     "pg": "8.23.0",
-    "zod": "4.4.3"
+    "zod": "4.6.6"
   },
   "devDependencies": {
     "@types/node": "26.2.0",
